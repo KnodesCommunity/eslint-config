@@ -3,9 +3,9 @@ export = {
 	extends: './ts-rxjs',
 	overrides: [
 		{
-			files: [ 'src/**/*.{spec,test}.ts{x,}' ],
+			files: [ './src/**/*.{spec,test}.ts{x,}', './test/**/*' ],
 			env: { jest: true },
-			extends: '../config-fragments/test-ts',
+			extends: '../config-fragments/ts-test',
 		},
 	],
 } as const;
