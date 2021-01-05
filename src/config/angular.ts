@@ -1,15 +1,42 @@
+const unitTestPattern = './src/**/*.{spec,test}.ts{x,}';
+const e2eTestPattern = './e2e/**/*.e2e-{spec,test}.ts{x,}';
+
 export = {
 	env: { browser: true },
-	extends: './ts-rxjs-base',
 	overrides: [
 		{
-			files: [ 'src/**/*.{spec,test}.ts{x,}' ],
-			env: { jasmine: true },
-			extends: '../config-fragments/test-ts',
+			files: [ '*.js{x,}' ],
+			extends: '../config-fragments/js',
+		},
+		{
+			files: [ '*.ts{x,}' ],
+			extends: '../config-fragments/ts-rxjs',
+			overrides: [
+				{
+					files: [ unitTestPattern ],
+					env: { jasmine: true },
+					extends: '../config-fragments/ts-test',
+				},
+				{
+					files: [ './e2e/**/*' ],
+					env: { protractor: true },
+					overrides: [
+						{
+							files: [ e2eTestPattern ],
+							env: { jasmine: true },
+							extends: '../config-fragments/ts-test',
+						},
+					],
+				},
+			],
 		},
 		{
 			files: [ '*.component.html' ],
 			extends: '../config-fragments/plugins/angular-eslint-template',
 		},
 	],
+	settings: {
+		unitTestPattern,
+		e2eTestPattern,
+	},
 } as const;

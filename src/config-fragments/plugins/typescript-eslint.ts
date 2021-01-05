@@ -127,6 +127,7 @@ export = {
 		'@typescript-eslint/no-floating-promises': 'error',
 		'@typescript-eslint/no-misused-new': 'error',
 		'@typescript-eslint/no-namespace': 'off',
+		'@typescript-eslint/no-non-null-assertion': 'error',
 		'@typescript-eslint/no-parameter-properties': 'off',
 		'@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
 		'@typescript-eslint/no-unnecessary-qualifier': 'error',

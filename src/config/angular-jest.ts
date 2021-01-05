@@ -4,7 +4,7 @@ export = {
 	extends: './angular',
 	overrides: [
 		{
-			files: angular.overrides[0].files,
+			files: [ angular.settings.unitTestPattern ],
 			env: { jest: true, jasmine: false },
 		},
 	],

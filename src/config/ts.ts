@@ -3,7 +3,7 @@ export = {
 	overrides: [
 		{
 			files: [ '*.{spec,test}.ts{x,}' ],
-			extends: '../config-fragments/test-ts',
+			extends: '../config-fragments/ts-test',
 		},
 	],
 };
