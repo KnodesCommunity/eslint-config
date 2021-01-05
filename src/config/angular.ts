@@ -7,10 +7,19 @@ export = {
 		{
 			files: [ '*.js{x,}' ],
 			extends: '../config-fragments/js',
+			overrides: [
+				{
+					files: [ './*' ],
+					env: { browser: false, node: true },
+				},
+			],
 		},
 		{
 			files: [ '*.ts{x,}' ],
-			extends: '../config-fragments/ts-rxjs',
+			extends: [
+				'../config-fragments/plugins/angular-eslint',
+				'../config-fragments/ts-rxjs',
+			],
 			overrides: [
 				{
 					files: [ unitTestPattern ],
@@ -18,7 +27,7 @@ export = {
 					extends: '../config-fragments/ts-test',
 				},
 				{
-					files: [ './e2e/**/*' ],
+					files: [ 'e2e/**/*' ],
 					env: { protractor: true },
 					overrides: [
 						{
