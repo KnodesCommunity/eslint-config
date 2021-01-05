@@ -1,6 +1,6 @@
 {
   "name": "@scitizen/eslint-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ESLint rules & presets for Scitizen",
   "scripts": {
     "lint": "eslint --config .eslintrc.js '{,src/**/}*.{js,ts}'",
