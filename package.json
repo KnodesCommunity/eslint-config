@@ -60,8 +60,7 @@
     "@typescript-eslint/eslint-plugin-tslint": "^4.0.0",
     "@typescript-eslint/parser": "4.0.0",
     "tslint-eslint-rules": "^5.0.0",
-    "tslint": "^6.0.0",
-    "typescript": "^4.0.0"
+    "tslint": "^6.0.0"
   },
   "husky": {
     "hooks": {
