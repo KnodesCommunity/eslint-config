@@ -129,6 +129,7 @@ export = {
 		'@typescript-eslint/no-namespace': 'off',
 		'@typescript-eslint/no-non-null-assertion': 'error',
 		'@typescript-eslint/no-parameter-properties': 'off',
+		'@typescript-eslint/no-shadow': [ 'error', { ignoreTypeValueShadow: true } ],
 		'@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
 		'@typescript-eslint/no-unnecessary-qualifier': 'error',
 		'@typescript-eslint/no-unused-expressions': 'error',

@@ -18,6 +18,7 @@ export = {
 			{
 				'pathGroups': [
 					{ pattern: '@scitizen/**', group: 'internal', position: 'before' },
+					{ pattern: '~{*,}/**', group: 'internal', position: 'before' },
 				],
 				'pathGroupsExcludedImportTypes': [ 'builtin' ],
 				'alphabetize': {
