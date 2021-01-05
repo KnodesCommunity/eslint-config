@@ -1,5 +1,5 @@
 export = {
-	extends: './ts-base',
+	extends: '../config-fragments/jts',
 	overrides: [
 		{
 			files: [ '*.{spec,test}.ts{x,}' ],

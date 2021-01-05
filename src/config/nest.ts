@@ -1,6 +1,6 @@
 export = {
 	env: { node: true },
-	extends: './ts-rxjs-base',
+	extends: './ts-rxjs',
 	overrides: [
 		{
 			files: [ 'src/**/*.{spec,test}.ts{x,}' ],

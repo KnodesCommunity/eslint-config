@@ -3,8 +3,8 @@ export = {
 		'import',
 	],
 	extends: [
+		'plugin:import/typescript',
 		'./js',
 		'./plugins/typescript-eslint',
-		'plugin:import/typescript',
 	],
 }
