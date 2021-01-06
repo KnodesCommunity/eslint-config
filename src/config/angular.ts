@@ -1,4 +1,4 @@
-const unitTestPattern = './src/**/*.{spec,test}.ts{x,}';
+const unitTestPattern = './src/{**/test-utils/**/*,**/*.{spec,test}}.ts{x,}';
 const e2eTestPattern = './e2e/**/*.e2e-{spec,test}.ts{x,}';
 
 export = {
