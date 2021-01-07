@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.3](https://github.com/Scitizen/eslint/compare/v1.0.2...v1.0.3) (2021-01-07)
+
+
+### Bug Fixes
+
+* **angular:** use js-config fragment for ./*.js & ./e2e/*.js ([5016bad](https://github.com/Scitizen/eslint/commit/5016baddbd81fa65109878f4d29d5762f07c3490))
+
 ### [1.0.2](https://github.com/Scitizen/eslint/compare/v1.0.1...v1.0.2) (2021-01-06)
 
 ### [1.0.1](https://github.com/Scitizen/eslint/compare/v1.0.0...v1.0.1) (2021-01-05)
