@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.4](https://github.com/Scitizen/eslint/compare/v1.0.3...v1.0.4) (2021-01-07)
+
+
+### Bug Fixes
+
+* **ts:** apply test config on test-utils & __mocks__ dir & light js config on root files ([06ea968](https://github.com/Scitizen/eslint/commit/06ea968fe696789e4b16cb734ef11b764c96ac0c))
+
 ### [1.0.3](https://github.com/Scitizen/eslint/compare/v1.0.2...v1.0.3) (2021-01-07)
 
 
