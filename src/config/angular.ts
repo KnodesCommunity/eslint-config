@@ -1,5 +1,5 @@
 const unitTestPattern = './src/{**/test-utils/**/*,**/*.{spec,test}}.ts{x,}';
-const e2eTestPattern = './e2e/**/*.e2e-{spec,test}.ts{x,}';
+const e2eTestPattern = './e2e/src/**/*.ts{x,}';
 
 export = {
 	env: { browser: true },
@@ -9,8 +9,13 @@ export = {
 			extends: '../config-fragments/js',
 			overrides: [
 				{
-					files: [ './*' ],
+					files: [ './*', './e2e/*' ],
 					env: { browser: false, node: true },
+					extends: '../config-fragments/js-config',
+				},
+				{
+					files: [ './e2e/*' ],
+					env: { jasmine: true },
 				},
 			],
 		},
@@ -27,7 +32,7 @@ export = {
 					extends: '../config-fragments/ts-test',
 				},
 				{
-					files: [ 'e2e/**/*' ],
+					files: [ './e2e/**/*' ],
 					env: { protractor: true },
 					overrides: [
 						{
