@@ -2,8 +2,12 @@ export = {
 	extends: '../config-fragments/jts',
 	overrides: [
 		{
-			files: [ '*.{spec,test}.ts{x,}' ],
+			files: [ '*.{spec,test}.ts{x,}', '**/{test-utils,__mocks__}/**/*.ts{x,}' ],
 			extends: '../config-fragments/ts-test',
+		},
+		{
+			files: [ './*.{j,t}s' ],
+			extends: '../config-fragments/overrides/js-lighten-rules',
 		},
 	],
 };
