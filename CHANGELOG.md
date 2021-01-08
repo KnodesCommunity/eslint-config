@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/Scitizen/eslint/compare/v1.0.4...v1.1.0) (2021-01-08)
+
+
+### Features
+
+* add rule to sort exports of barrel files (index.{j,t}s{,x}) ([a112e23](https://github.com/Scitizen/eslint/commit/a112e230ba643f9ce9588dcc69a70b09824fa67d))
+
 ### [1.0.4](https://github.com/Scitizen/eslint/compare/v1.0.3...v1.0.4) (2021-01-07)
 
 
