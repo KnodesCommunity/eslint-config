@@ -35,7 +35,7 @@ This set of rules is released open-source for anyone to use. It is meant to be a
   * JS + TS: `@scitizen/eslint-config/ts`
   * JS + TS + rxjs: `@scitizen/eslint-config/ts-rxjs`
 
-You can also use configuration fragments from `@scitizen/eslint-config/config-fragments/*`. See [the directory on GitHub](https://github.com/Scitizen/eslint/tree/main/src/config-fragments).
+You can also use configuration fragments from `@scitizen/eslint-config/config-fragments/*`. See [the directory on GitHub](https://github.com/Scitizen/eslint-config/tree/main/src/config-fragments).
 
 ### Installation & configuration
 
@@ -53,8 +53,9 @@ npm install --save-dev @typescript-eslint/eslint-plugin @typescript-eslint/eslin
 
 #### Without/other framework
 
+<blockquote>
 <details>
-<summary>Sample <code>.eslintrc.js</code> for Typescript</summary>
+<summary>See sample <code>.eslintrc.js</code> for Typescript</summary>
 
 ```js
 module.exports = {
@@ -67,9 +68,11 @@ module.exports = {
 ```
 
 </details>
+</blockquote>
 
+<blockquote>
 <details>
-<summary>Sample <code>.eslintrc.js</code> for Javascript</summary>
+<summary>See sample <code>.eslintrc.js</code> for Javascript</summary>
 
 ```js
 module.exports = {
@@ -79,6 +82,7 @@ module.exports = {
 ```
 
 </details>
+</blockquote>
 
 ##### Assumed directory structure
 

@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Scitizen/eslint.git"
+    "url": "git+https://github.com/Scitizen/eslint-config.git"
   },
   "keywords": [
     "eslint"
@@ -21,9 +21,9 @@
   "author": "GerkinDev",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Scitizen/eslint/issues"
+    "url": "https://github.com/Scitizen/eslint-config/issues"
   },
-  "homepage": "https://github.com/Scitizen/eslint#readme",
+  "homepage": "https://github.com/Scitizen/eslint-config#readme",
   "exports": {
     "./": "./dist/config/",
     "./fragments": "./dist/config-fragments/"
