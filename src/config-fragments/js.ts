@@ -7,4 +7,13 @@ export = {
 		'./plugins/jsdoc',
 		'./plugins/prefer-arrow',
 	],
+	overrides: [
+		{
+			plugins: [ 'sort-export-all' ],
+			files: [ 'src/**/index.{j,t}s{,x}' ],
+			rules: {
+				'sort-export-all/sort-export-all': 'error',
+			},
+		},
+	],
 }
