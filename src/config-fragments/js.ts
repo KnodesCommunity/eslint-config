@@ -10,7 +10,7 @@ export = {
 	overrides: [
 		{
 			plugins: [ 'sort-export-all' ],
-			files: [ 'src/**/index.{j,t}s{,x}' ],
+			files: [ '**/index.{j,t}s{,x}' ],
 			rules: {
 				'sort-export-all/sort-export-all': 'error',
 			},
