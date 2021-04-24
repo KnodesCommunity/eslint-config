@@ -2,7 +2,7 @@ const unitTestPattern = './src/{**/test-utils/**/*,**/*.{spec,test}}.ts{x,}';
 const e2eTestPattern = './e2e/src/**/*.ts{x,}';
 
 export = {
-	env: { browser: true },
+	env: {},
 	overrides: [
 		{
 			files: [ '*.js{x,}' ],
@@ -26,6 +26,10 @@ export = {
 				'../config-fragments/ts-rxjs',
 			],
 			overrides: [
+				{
+					files: [ './src/test.ts' ],
+					extends: '../config-fragments/overrides/js-lighten-rules',
+				},
 				{
 					files: [ unitTestPattern ],
 					env: { jasmine: true },
