@@ -42,7 +42,7 @@ You can also use configuration fragments from `@scitizen/eslint-config/config-fr
 For any preset, you must at least install base dependencies.
 
 ```sh
-npm install --save-dev @scitizen/eslint-config eslint eslint-plugin-import eslint-plugin-jsdoc eslint-plugin-prefer-arrow eslint-plugin-sort-export-all lodash
+npm install --save-dev @scitizen/eslint-config eslint eslint-plugin-import eslint-plugin-jsdoc eslint-plugin-prefer-arrow eslint-plugin-sort-export-all
 ```
 
 If you're using **Typescript**, install also `@typescript-eslint` related dependencies.
