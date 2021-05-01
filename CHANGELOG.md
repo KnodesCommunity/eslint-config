@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/Scitizen/eslint-config/compare/v1.1.1...v1.2.0) (2021-05-01)
+
+
+### Features
+
+* **angular:** apply light js lint rules on test index ([a391628](https://github.com/Scitizen/eslint-config/commit/a391628a298a5322ce55b83eb6bf692a6069cb0a))
+* **angular:** update to latest plugins, use more strict rules ([7f3a7ba](https://github.com/Scitizen/eslint-config/commit/7f3a7ba167512def20a4cd9a0992647bad403080))
+* **js:** apply sort export rules on every js & ts files, not only under src ([3421bb8](https://github.com/Scitizen/eslint-config/commit/3421bb8c2f6bdab372be9721f74449e7b9051b9c))
+
 ### [1.1.1](https://github.com/Scitizen/eslint-config/compare/v1.1.0...v1.1.1) (2021-01-08)
 
 ## [1.1.0](https://github.com/Scitizen/eslint-config/compare/v1.0.4...v1.1.0) (2021-01-08)
