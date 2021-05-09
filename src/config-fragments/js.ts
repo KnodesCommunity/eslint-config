@@ -6,6 +6,7 @@ export = {
 		'./plugins/import',
 		'./plugins/jsdoc',
 		'./plugins/prefer-arrow',
+		'./plugins/eslint-comments',
 	],
 	overrides: [
 		{
