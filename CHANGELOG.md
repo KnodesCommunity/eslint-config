@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/Scitizen/eslint-config/compare/v1.2.0...v1.3.0) (2021-05-09)
+
+
+### Features
+
+* **angular:** add libs configs ([6969ae7](https://github.com/Scitizen/eslint-config/commit/6969ae7304fe60a4458caa7f9e8f43016cb9e3b9))
+* **angular:** customize default rules ([63e544a](https://github.com/Scitizen/eslint-config/commit/63e544a074b071b60fc668839c98aa4b65c97df2))
+* **comments:** add eslint-plugin-comments ([56f8a3f](https://github.com/Scitizen/eslint-config/commit/56f8a3f0f6c022bfd33863e0c10231458826553d))
+* **eslint:** allow time and timeEnd on console ([bdf0034](https://github.com/Scitizen/eslint-config/commit/bdf0034abd71e8e1305583c96b56524967a1a567))
+* add testing overrides ([b27d97d](https://github.com/Scitizen/eslint-config/commit/b27d97d341c656b4c7df805a8d9d37730f630b7e))
+
+
+### Bug Fixes
+
+* map exports fragments ([8bbc877](https://github.com/Scitizen/eslint-config/commit/8bbc877528dbfe0b7ebb4d6f5d56cdb2b6f1b043))
+* **angular:** fix naming of configs ([a0d0ff6](https://github.com/Scitizen/eslint-config/commit/a0d0ff6ba23391cfedbd63731724ce03af01d1a6))
+
 ## [1.2.0](https://github.com/Scitizen/eslint-config/compare/v1.1.1...v1.2.0) (2021-05-01)
 
 
