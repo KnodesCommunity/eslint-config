@@ -4,7 +4,6 @@ export = {
 	parser: '@typescript-eslint/parser',
 	plugins: [
 		'@typescript-eslint',
-		'@typescript-eslint/tslint',
 	],
 	extends: 'plugin:@typescript-eslint/recommended',
 	rules: {
@@ -150,15 +149,6 @@ export = {
 		'@typescript-eslint/triple-slash-reference': [
 			'error',
 			{ path: 'always', types: 'prefer-import', lib: 'always' },
-		],
-		'@typescript-eslint/tslint/config': [
-			'error',
-			{
-				rules: {
-					'completed-docs': [ true, 'enums', 'functions', 'methods' ],
-					'no-inferred-empty-object-type': true,
-				},
-			},
 		],
 		'@typescript-eslint/unified-signatures': 'error',
 	},
