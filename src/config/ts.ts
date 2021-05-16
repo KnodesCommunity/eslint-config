@@ -9,5 +9,9 @@ export = {
 			files: [ './*.{j,t}s' ],
 			extends: '../config-fragments/overrides/js-lighten-rules',
 		},
+		{
+			files: [ './types/**/*.d.tsx?' ],
+			extends: '../config-fragments/ts-test',
+		},
 	],
 };
