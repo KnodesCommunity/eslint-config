@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/Scitizen/eslint-config/compare/v1.3.1...v1.4.0) (2021-05-16)
+
+
+### Features
+
+* **nest:** better rules for `test` dir ([f50393c](https://github.com/Scitizen/eslint-config/commit/f50393cfc30d41f19cd8c4c665122f420e171459))
+* **ts:** light rules on custom typings dir (`types`) ([8a81bfe](https://github.com/Scitizen/eslint-config/commit/8a81bfe8aeb2eb07d40ea1c76652d2457f1808f7))
+
+
+### Bug Fixes
+
+* change packages versions to avoid benmosher/eslint-plugin-import[#2067](https://github.com/Scitizen/eslint-config/issues/2067) ([bc7be2e](https://github.com/Scitizen/eslint-config/commit/bc7be2e8f146b7e6e9503ac2da2d3a260db322ec))
+
 ### [1.3.1](https://github.com/Scitizen/eslint-config/compare/v1.3.0...v1.3.1) (2021-05-10)
 
 ## [1.3.0](https://github.com/Scitizen/eslint-config/compare/v1.2.0...v1.3.0) (2021-05-09)
