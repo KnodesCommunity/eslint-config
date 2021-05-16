@@ -3,9 +3,14 @@ export = {
 	extends: './ts-rxjs',
 	overrides: [
 		{
-			files: [ './src/**/*.{spec,test}.ts{x,}', './test/**/*' ],
+			files: [ './src/**/*.{spec,test}.ts{x,}', './test/**/*.ts{x,}' ],
 			env: { jest: true },
 			extends: '../config-fragments/ts-test',
+		},
+		{
+			files: [ './test/*.js' ],
+			env: { jest: true, commonjs: true },
+			extends: '../config-fragments/overrides/js-lighten-rules',
 		},
 	],
 } as const;
