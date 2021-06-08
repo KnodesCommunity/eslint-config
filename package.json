@@ -39,7 +39,7 @@
   },
   "exports": {
     "./": "./dist/config/",
-    "./fragments/*": "./dist/config-fragments/*.js"
+    "./fragments/": "./dist/config-fragments/"
   },
   "peerDependenciesMeta": {
     "@angular-eslint/builder": {
@@ -72,30 +72,30 @@
     "@typescript-eslint/parser": "^4.0.0",
     "eslint": "^7.0.0",
     "eslint-plugin-import": "^2.23.2",
-    "eslint-plugin-jsdoc": "^32.0.0",
+    "eslint-plugin-jsdoc": "^35.0.0",
     "eslint-plugin-prefer-arrow": "^1.0.0",
     "eslint-plugin-sort-export-all": "^1.0.0",
     "eslint-plugin-eslint-comments": "^3.0.0"
   },
   "devDependencies": {
-    "@angular-eslint/eslint-plugin": "^4.0.0",
-    "@angular-eslint/eslint-plugin-template": "^4.0.0",
-    "@angular-eslint/template-parser": "^4.0.0",
-    "@commitlint/cli": "^12.1.1",
-    "@commitlint/config-conventional": "^12.1.1",
-    "@types/eslint": "^7.2.10",
-    "@types/node": "^15.0.1",
-    "@typescript-eslint/eslint-plugin": "4.22.0",
-    "@typescript-eslint/parser": "4.22.0",
-    "eslint": "^7.25.0",
-    "eslint-plugin-import": "^2.23.2",
-    "eslint-plugin-jsdoc": "^32.3.3",
+    "@angular-eslint/eslint-plugin": "^4.3.0",
+    "@angular-eslint/eslint-plugin-template": "^4.3.0",
+    "@angular-eslint/template-parser": "^4.3.0",
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@types/eslint": "^7.2.13",
+    "@types/node": "^15.12.2",
+    "@typescript-eslint/eslint-plugin": "4.26.1",
+    "@typescript-eslint/parser": "4.26.1",
+    "eslint": "^7.28.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsdoc": "^35.1.3",
     "eslint-plugin-prefer-arrow": "^1.2.3",
     "eslint-plugin-sort-export-all": "^1.1.1",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "format-package": "^6.1.0",
     "husky": "^6.0.0",
-    "standard-version": "^9.2.0",
-    "typescript": "^4.2.4"
+    "standard-version": "^9.3.0",
+    "typescript": "^4.3.2"
   }
 }
