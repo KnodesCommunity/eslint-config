@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.1](https://github.com/Scitizen/eslint-config/compare/v1.4.0...v1.4.1) (2021-06-08)
+
+
+### Bug Fixes
+
+* fix export of fragments, update dependencies ([a822a96](https://github.com/Scitizen/eslint-config/commit/a822a9602a603e036478f4da02663caf1c2293ef))
+
 ## [1.4.0](https://github.com/Scitizen/eslint-config/compare/v1.3.1...v1.4.0) (2021-05-16)
 
 
