@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.3](https://github.com/Scitizen/eslint-config/compare/v1.4.2...v1.4.3) (2021-06-14)
+
+
+### Bug Fixes
+
+* **jsdoc:** disable check of getter/setter/ctor, disable param type for TS ([62b1c6d](https://github.com/Scitizen/eslint-config/commit/62b1c6d3dece2a063296c7c6e0daba94c3148a49))
+
 ### [1.4.2](https://github.com/Scitizen/eslint-config/compare/v1.4.1...v1.4.2) (2021-06-14)
 
 
