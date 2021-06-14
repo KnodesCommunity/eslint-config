@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.2](https://github.com/Scitizen/eslint-config/compare/v1.4.1...v1.4.2) (2021-06-14)
+
+
+### Bug Fixes
+
+* **jsdoc:** restore require of jsdoc on methods ([12af90c](https://github.com/Scitizen/eslint-config/commit/12af90cd66f1d9e8929357d5a89190d35d85e6f2))
+
 ### [1.4.1](https://github.com/Scitizen/eslint-config/compare/v1.4.0...v1.4.1) (2021-06-08)
 
 
