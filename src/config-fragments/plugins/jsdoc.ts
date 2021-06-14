@@ -4,6 +4,7 @@ export = {
 	],
 	extends: 'plugin:jsdoc/recommended',
 	rules: {
+		'jsdoc/require-jsdoc': [ 'error', { require: { FunctionDeclaration: true, MethodDefinition: true }} ],
 		'jsdoc/check-alignment': 'error',
 		'jsdoc/check-param-names': [ 'warn', { checkDestructured: false } ],
 		'jsdoc/newline-after-description': [ 'error', 'always' ],
