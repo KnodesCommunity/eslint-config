@@ -15,5 +15,6 @@ export = {
 		'no-shadow': 'off',
 		'no-dupe-class-members': 'off',
 		'import/export': 'off',
+		'jsdoc/require-param-type': 'off',
 	},
 }
