@@ -51,7 +51,7 @@ export = {
 			'error',
 			{
 				default: [
-				// Index signature
+					// Index signature
 					'signature',
 
 					// Static fields
@@ -138,6 +138,7 @@ export = {
 				argsIgnorePattern: '^_',
 				caughtErrors: 'all',
 				caughtErrorsIgnorePattern: '^_',
+				ignoreRestSiblings: true,
 			},
 		],
 		'@typescript-eslint/no-use-before-define': 'off',
