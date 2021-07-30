@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.4](https://github.com/Scitizen/eslint-config/compare/v1.4.3...v1.4.4) (2021-07-30)
+
+
+### Bug Fixes
+
+* **angular:** use multiple paths for unit tests ([ac16e87](https://github.com/Scitizen/eslint-config/commit/ac16e87805a37edba5f2718d5d3ef806f1292192))
+* **js:** allow dev dependencies in configs ([10d2b74](https://github.com/Scitizen/eslint-config/commit/10d2b740b25d70066b07c66496ea0dcc66f6c853))
+* **jsdoc:** properly support overloads, disable rule for tests ([a4308b9](https://github.com/Scitizen/eslint-config/commit/a4308b9889b0cd29edbe51f3b35f3ed14dcb07a7))
+* **typescript:** ignore unused rest in destructuring ([80673b1](https://github.com/Scitizen/eslint-config/commit/80673b1fcd859dab48610b1107fd23b945b7825d))
+
 ### [1.4.3](https://github.com/Scitizen/eslint-config/compare/v1.4.2...v1.4.3) (2021-06-14)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@scitizen/eslint-config",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "description": "ESLint rules & presets for Scitizen",
   "license": "MIT",
   "repository": {
