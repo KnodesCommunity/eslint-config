@@ -6,8 +6,8 @@ export = {
 	extends: './index',
 	overrides: [
 		{
-			// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-			files: [ angular.settings!.unitTestPattern ],
+			// eslint-disable-next-line @typescript-eslint/no-non-null-assertion -- Actually expected
+			files: [ ...angular.settings!.unitTestPatterns ],
 			env: { jest: true, jasmine: false },
 		},
 	],

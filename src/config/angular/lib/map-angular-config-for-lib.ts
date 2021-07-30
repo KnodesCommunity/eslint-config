@@ -3,7 +3,7 @@ import { Linter } from 'eslint';
 const mapFile = ( files: string | string[] ): string | string[] => {
 	if( typeof files === 'string' ){
 		if( files.startsWith( './src' ) ) {
-			return [ files, files.replace( /^\.\/src/, './*/src' ) ];
+			return [ files, files.replace( /^\.\/src/, './**/src' ) ];
 		} else {
 			return files;
 		}
@@ -37,4 +37,8 @@ const mapOverride = ( override: Linter.ConfigOverride ): Linter.ConfigOverride =
 export const mapAngularConfigForLib = ( config: Linter.Config ): Linter.Config => ( {
 	...config,
 	overrides: config.overrides?.map( ( o: any ) => mapOverride( o ) ),
+	settings: {
+		unitTestPatterns: mapFile( config.settings?.unitTestPatterns ?? [] ),
+		e2eTestPattern: config.settings?.e2eTestPattern,
+	},
 } );

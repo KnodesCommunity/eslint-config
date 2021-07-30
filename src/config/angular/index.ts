@@ -1,6 +1,6 @@
 import { Linter } from 'eslint';
 
-const unitTestPattern = './src/{**/test-utils/**/*,**/*.{spec,test}}.ts{x,}';
+const unitTestPatterns = [ './src/**/test-utils/**/*', './src/**/*.{spec,test}.ts{x,}' ];
 const e2eTestPattern = './e2e/src/**/*.ts{x,}';
 
 export = {
@@ -33,7 +33,7 @@ export = {
 					extends: '../../config-fragments/ts-test',
 				},
 				{
-					files: [ unitTestPattern ],
+					files: [ ...unitTestPatterns ],
 					env: { jasmine: true },
 					extends: [
 						'../../config-fragments/ts-test',
@@ -60,7 +60,7 @@ export = {
 		},
 	],
 	settings: {
-		unitTestPattern,
+		unitTestPatterns,
 		e2eTestPattern,
 	},
 } as Linter.Config;
