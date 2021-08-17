@@ -38,8 +38,8 @@
     ]
   },
   "exports": {
-    "./": "./dist/config/",
-    "./fragments/": "./dist/config-fragments/"
+    "./*": "./dist/config/*.js",
+    "./fragments/*": "./dist/config-fragments/*.js"
   },
   "peerDependenciesMeta": {
     "@angular-eslint/builder": {

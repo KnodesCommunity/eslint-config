@@ -1,9 +1,9 @@
 import { Linter } from 'eslint';
 
-import angular from './index';
+import angular from '../angular';
 
 export = {
-	extends: './index',
+	extends: '../angular',
 	overrides: [
 		{
 			// eslint-disable-next-line @typescript-eslint/no-non-null-assertion -- Actually expected
