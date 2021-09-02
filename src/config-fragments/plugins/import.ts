@@ -35,5 +35,6 @@ export = {
 				'newlines-between': 'always-and-inside-groups',
 			},
 		],
+		'import/named': 'off', // See issue https://github.com/import-js/eslint-plugin-import/issues/2187
 	},
 }
