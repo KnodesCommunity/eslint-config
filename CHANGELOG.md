@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/Scitizen/eslint-config/compare/v1.4.7...v1.5.0) (2021-09-02)
+
+
+### Features
+
+* **plugin/import:** add #** imports before ~** and after [@scitizen](https://github.com/scitizen) imports ([4bf29de](https://github.com/Scitizen/eslint-config/commit/4bf29de157696c89855d68a767ef9ac0dd399b2b))
+
+
+### Bug Fixes
+
+* **config/ts:** add __tests__ directory as using `ts-test` fragment ([0856746](https://github.com/Scitizen/eslint-config/commit/085674684ae19e05920d245b0cf0c86f7f8397c1))
+* **plugin/import:** disable import/named because of bug import-js/eslint-plugin-import[#2187](https://github.com/Scitizen/eslint-config/issues/2187) ([40f2faa](https://github.com/Scitizen/eslint-config/commit/40f2faaa43785b4ec27c95ff0c98e218afb30cef))
+
 ### [1.4.7](https://github.com/Scitizen/eslint-config/compare/v1.4.6...v1.4.7) (2021-08-21)
 
 ### [1.4.6](https://github.com/Scitizen/eslint-config/compare/v1.4.5...v1.4.6) (2021-08-21)
