@@ -2,7 +2,7 @@ export = {
 	extends: '../config-fragments/jts',
 	overrides: [
 		{
-			files: [ '*.{spec,test}.ts{x,}', '**/{test-utils,__mocks__}/**/*.ts{x,}' ],
+			files: [ '*.{spec,test}.ts{x,}', '**/{test-utils,__mocks__}/**/*.ts{x,}', '__tests__/**/*.ts{x,}' ],
 			extends: '../config-fragments/ts-test',
 		},
 		{
