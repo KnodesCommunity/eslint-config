@@ -16,14 +16,15 @@
     "eslint"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "prebuild": "rm -rf ./dist",
+    "build": "tsc -p ./tsconfig.json",
     "build:watch": "npm run build -- --watch",
     "format:pkg": "format-package --write",
     "lint": "eslint --config .eslintrc.js '{,src/**/}*.{js,ts}'",
     "lint:commit-message:current": "commitlint -E HUSKY_GIT_PARAMS",
     "lint:fix": "npm run lint -- --fix",
     "precommit": "npm run lint && npm run build",
-    "prepare": "husky install && rm -rf dist && npm run build",
+    "prepare": "husky install && npm run build",
     "release": "standard-version"
   },
   "commitlint": {
