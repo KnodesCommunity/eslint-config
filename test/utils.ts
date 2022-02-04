@@ -1,7 +1,9 @@
 import { dirname, resolve } from 'path';
 
-// eslint-disable-next-line import/order -- mock files matching glob before anything else.
+import { ESLint, Linter } from 'eslint';
+import { ensureDir, mkdirp, pathExists, readFile, rm, writeFile } from 'fs-extra';
 import { globbySync } from 'globby';
+import { nanoid } from 'nanoid';
 
 const allSrc = globbySync( '**/*.ts', { cwd: resolve( __dirname, '../src' ) } );
 allSrc.forEach( src => {
@@ -21,28 +23,24 @@ jest.mock( 'import-fresh/node_modules/resolve-from', () => {
 		return actual( from, module );
 	};
 } );
-jest.mock( '@eslint/eslintrc/lib/shared/relative-module-resolver', () => {
-	const actual = jest.requireActual( '@eslint/eslintrc/lib/shared/relative-module-resolver' );
-	return {
-		resolve: ( moduleName: string, relativeToPath: string ) => {
-			const customModuleMatch = moduleName.match( /^@scitizen\/eslint-config(?:\/(.*))?$/ );
-			if( customModuleMatch ){
-				if( customModuleMatch[1].startsWith( 'config-fragments' ) ){
-					return resolve( fakeModule, `${customModuleMatch[1]}.js` );
-				} else {
-					return resolve( fakeModule, `config/${customModuleMatch[1]}.js` );
-				}
-			} else if( relativeToPath.startsWith( fakeModule ) && moduleName.match( /^\.{1,2}\// ) ){
-				return resolve( dirname( relativeToPath ), `${moduleName}.js` );
-			}
-			return actual.resolve( moduleName, relativeToPath );
-		},
-	};
-} );
 
-import { ESLint, Linter } from 'eslint';
-import { ensureDir, mkdirp, pathExists, readFile, rmdir, writeFile } from 'fs-extra';
-import { nanoid } from 'nanoid';
+// Override eslint resolve
+// eslint-disable-next-line import/no-extraneous-dependencies, @typescript-eslint/no-var-requires -- using transient dependency hidden export
+const EslintModuleResolver = require( '@eslint/eslintrc' ).Legacy.ModuleResolver;
+const EslintModuleResolverBaseResolve = EslintModuleResolver.resolve;
+EslintModuleResolver.resolve = ( moduleName: string, relativeToPath: string ) => {
+	const customModuleMatch = moduleName.match( /^@scitizen\/eslint-config(?:\/(.*))?$/ );
+	if( customModuleMatch ){
+		if( customModuleMatch[1].startsWith( 'config-fragments' ) ){
+			return resolve( fakeModule, `${customModuleMatch[1]}.js` );
+		} else {
+			return resolve( fakeModule, `config/${customModuleMatch[1]}.js` );
+		}
+	} else if( relativeToPath.startsWith( fakeModule ) && moduleName.match( /^\.{1,2}\// ) ){
+		return resolve( dirname( relativeToPath ), `${moduleName}.js` );
+	}
+	return EslintModuleResolverBaseResolve( moduleName, relativeToPath );
+};
 
 const mockFileSym: unique symbol = Symbol();
 export type MockFile = string & {__sym__: typeof mockFileSym};
@@ -147,6 +145,6 @@ export class MockContext {
 	 * @param testDir - The test directory to cleanup.
 	 */
 	private async _cleanupDir( testDir: string ) {
-		await rmdir( testDir, { recursive: true } );
+		await rm( testDir, { recursive: true } );
 	}
 }
