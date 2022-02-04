@@ -1,8 +1,17 @@
 /* eslint-disable max-len -- long contexts */
+import jsdoc from './plugins/jsdoc';
+
 export = {
 	plugins: [
 		'import',
 	],
+	settings: {
+		jsdoc: {
+			tagNamePreference: {
+				template: 'typeparam',
+			},
+		},
+	},
 	extends: [
 		'plugin:import/typescript',
 		'./js',
@@ -27,6 +36,9 @@ export = {
 			require: {
 				FunctionDeclaration: false,
 			},
+		} ],
+		'jsdoc/check-tag-names': [ 'error', {
+			definedTags: [ 'category', 'typeparam', ...jsdoc.rules['jsdoc/check-tag-names'][1].definedTags ],
 		} ],
 	},
 }

@@ -97,6 +97,45 @@ export class Qux {
 					expect( errors[0].messages ).toEqual( [] );
 				} );
 			} );
+			describe( 'TypeDoc tags', () => {
+				it.each( [[ 'template', 'typeparam' ]] )( 'should report to replace TypeDoc tag %s with %s', async ( tag, prefered ) => {
+					const ctx = new MockContext();
+					const testedFile = ctx.addFile( './src/test.ts', `
+/**
+ * @${tag} some content
+ */
+export const foo = 1;
+` );
+					const tsconfig = ctx.addFile( './tsconfig.json', JSON.stringify( { files: [ testedFile ] } ) );
+					const errors = await ctx.getErrors(
+						dir => ( {
+							extends: '@scitizen/eslint-config/ts',
+							parserOptions: { project: tsconfig, tsconfigRootDir: dir },
+						} ),
+						testedFile );
+					expect( errors[0].messages ).toEqual( [ expect.objectContaining( {
+						ruleId: 'jsdoc/check-tag-names',
+						message: `Invalid JSDoc tag (preference). Replace "${tag}" JSDoc tag with "${prefered}".`,
+					} ) ] );
+				} );
+				it.each( [ 'category', 'typeparam', 'usage' ] )( 'should not report TypeDoc tag %s', async tag => {
+					const ctx = new MockContext();
+					const testedFile = ctx.addFile( './src/test.ts', `
+/**
+ * @${tag} some content
+ */
+export const foo = 1;
+` );
+					const tsconfig = ctx.addFile( './tsconfig.json', JSON.stringify( { files: [ testedFile ] } ) );
+					const errors = await ctx.getErrors(
+						dir => ( {
+							extends: '@scitizen/eslint-config/ts',
+							parserOptions: { project: tsconfig, tsconfigRootDir: dir },
+						} ),
+						testedFile );
+					expect( errors[0].messages ).toEqual( [] );
+				} );
+			} );
 		} );
 		describe( 'typescript', () => {
 			it( 'should not trigger typescript error on JS file', async () => {

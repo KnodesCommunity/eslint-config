@@ -21,6 +21,6 @@ export = {
 		'jsdoc/require-param': [ 'warn', { checkDestructured: false } ],
 		'jsdoc/require-param-type': 'off',
 		'jsdoc/require-returns-type': 'off',
-		'jsdoc/check-tag-names': [ 'error', { definedTags: [ 'accessControl', 'usage', 'typeparam' ] } ],
+		'jsdoc/check-tag-names': [ 'error', { definedTags: [ 'usage' ] } ],
 	},
-};
+} as const;
