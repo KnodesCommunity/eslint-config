@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/KnodesCommunity/eslint-config/compare/v1.5.1...v1.6.0) (2022-02-04)
+
+
+### Features
+
+* **plugin/typescript-eslint:** require leading underscore for private methods/properties ([afe1de2](https://github.com/KnodesCommunity/eslint-config/commit/afe1de221df27d78a5122e36a477258f61230d31))
+* **plugins/jsdoc:** add custom tags `category`, `typeparam` (TS) & `usage` (JS | TS) ([b69df19](https://github.com/KnodesCommunity/eslint-config/commit/b69df19ac0fa68321794982a45c2061c2f4e98b6))
+
 ### [1.5.1](https://github.com/Scitizen/eslint-config/compare/v1.5.0...v1.5.1) (2021-09-10)
 
 
