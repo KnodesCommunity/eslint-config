@@ -118,7 +118,16 @@ export = {
 		],
 		'@typescript-eslint/naming-convention': [
 			'error',
-			{ selector: 'enumMember', format: [ 'camelCase', 'UPPER_CASE' ] },
+			{
+				selector: 'enumMember',
+				format: [ 'camelCase', 'UPPER_CASE' ],
+			},
+			{
+				selector: [ 'classProperty', 'classMethod', 'accessor' ],
+				modifiers: [ 'private' ],
+				format: [ 'camelCase' ],
+				leadingUnderscore: 'require',
+			},
 		],
 		'@typescript-eslint/no-empty-function': 'error',
 		'@typescript-eslint/no-empty-interface': 'error',
