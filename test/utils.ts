@@ -8,17 +8,17 @@ import { nanoid } from 'nanoid';
 const allSrc = globbySync( '**/*.ts', { cwd: resolve( __dirname, '../src' ) } );
 allSrc.forEach( src => {
 	jest.mock(
-		`@scitizen/eslint-config/${src.replace( '.ts', '.js' )}`,
+		`@knodes/eslint-config/${src.replace( '.ts', '.js' )}`,
 		() => jest.requireActual( resolve( __dirname, '../src', src ) ),
 		{ virtual: true } );
 } );
 
-const fakeModule = resolve( __dirname, '../node_modules/@scitizen/eslint-config' );
+const fakeModule = resolve( __dirname, '../node_modules/@knodes/eslint-config' );
 jest.mock( 'import-fresh/node_modules/resolve-from', () => {
 	const actual = jest.requireActual( 'import-fresh/node_modules/resolve-from' );
 	return ( from: string, module: string ) => {
 		if( module.startsWith( fakeModule ) ){
-			return `@scitizen/eslint-config${module.replace( fakeModule, '' )}`;
+			return `@knodes/eslint-config${module.replace( fakeModule, '' )}`;
 		}
 		return actual( from, module );
 	};
@@ -29,7 +29,7 @@ jest.mock( 'import-fresh/node_modules/resolve-from', () => {
 const EslintModuleResolver = require( '@eslint/eslintrc' ).Legacy.ModuleResolver;
 const EslintModuleResolverBaseResolve = EslintModuleResolver.resolve;
 EslintModuleResolver.resolve = ( moduleName: string, relativeToPath: string ) => {
-	const customModuleMatch = moduleName.match( /^@scitizen\/eslint-config(?:\/(.*))?$/ );
+	const customModuleMatch = moduleName.match( /^@knodes\/eslint-config(?:\/(.*))?$/ );
 	if( customModuleMatch ){
 		if( customModuleMatch[1].startsWith( 'config-fragments' ) ){
 			return resolve( fakeModule, `${customModuleMatch[1]}.js` );

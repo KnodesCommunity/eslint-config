@@ -13,7 +13,7 @@ export class FooComponent {}
 				const tsconfig = ctx.addFile( './tsconfig.json', JSON.stringify( { files: [ testedFile ] } ) );
 				const errors = await ctx.getErrors(
 					dir => ( {
-						extends: '@scitizen/eslint-config/angular',
+						extends: '@knodes/eslint-config/angular',
 						parserOptions: { project: tsconfig, tsconfigRootDir: dir },
 					} ),
 					testedFile );
@@ -25,7 +25,7 @@ export class FooComponent {}
 				const tsconfig = ctx.addFile( './tsconfig.json', JSON.stringify( { files: [ testedFile ] } ) );
 				const errors = await ctx.getErrors(
 					dir => ( {
-						extends: '@scitizen/eslint-config/angular',
+						extends: '@knodes/eslint-config/angular',
 						parserOptions: { project: tsconfig, tsconfigRootDir: dir },
 					} ),
 					testedFile );

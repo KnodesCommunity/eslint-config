@@ -1,5 +1,5 @@
-# @scitizen/eslint-config
-ESLint rules &amp; presets for Scitizen
+# @knodes/eslint-config
+ESLint rules &amp; presets for Knodes
 ---
 
 This set of rules is released open-source for anyone to use. It is meant to be a strict, aerated configuration.
@@ -28,25 +28,25 @@ This set of rules is released open-source for anyone to use. It is meant to be a
 ### Configurations quick outline:
 
 * Angular:
-  * `@scitizen/eslint-config/angular`
-  * `@scitizen/eslint-config/angular/jest`
+  * `@knodes/eslint-config/angular`
+  * `@knodes/eslint-config/angular/jest`
   * For libs:
-    * `@scitizen/eslint-config/angular/lib`
-    * `@scitizen/eslint-config/angular/lib/jest`
-* Nest: `@scitizen/eslint-config/nest`
+    * `@knodes/eslint-config/angular/lib`
+    * `@knodes/eslint-config/angular/lib/jest`
+* Nest: `@knodes/eslint-config/nest`
 * Bare:
-  * Pure JS: `@scitizen/eslint-config/js`
-  * JS + TS: `@scitizen/eslint-config/ts`
-  * JS + TS + rxjs: `@scitizen/eslint-config/ts-rxjs`
+  * Pure JS: `@knodes/eslint-config/js`
+  * JS + TS: `@knodes/eslint-config/ts`
+  * JS + TS + rxjs: `@knodes/eslint-config/ts-rxjs`
 
-You can also use configuration fragments from `@scitizen/eslint-config/config-fragments/*`. See [the directory on GitHub](https://github.com/Scitizen/eslint-config/tree/main/src/config-fragments).
+You can also use configuration fragments from `@knodes/eslint-config/config-fragments/*`. See [the directory on GitHub](https://github.com/KnodesCommunity/eslint-config/tree/main/src/config-fragments).
 
 ### Installation & configuration
 
 For any preset, you must at least install base dependencies.
 
 ```sh
-npm install --save-dev @scitizen/eslint-config eslint eslint-plugin-import eslint-plugin-jsdoc eslint-plugin-prefer-arrow eslint-plugin-sort-export-all eslint-plugin-eslint-comments
+npm install --save-dev @knodes/eslint-config eslint eslint-plugin-import eslint-plugin-jsdoc eslint-plugin-prefer-arrow eslint-plugin-sort-export-all eslint-plugin-eslint-comments
 ```
 
 If you're using **Typescript**, install also `@typescript-eslint` related dependencies.
@@ -58,7 +58,7 @@ npm install --save-dev @typescript-eslint/eslint-plugin @typescript-eslint/parse
 #### Angular
 
 ```sh
-npm install --save-dev @scitizen/eslint-config eslint \
+npm install --save-dev @knodes/eslint-config eslint \
   eslint-plugin-import eslint-plugin-jsdoc eslint-plugin-prefer-arrow eslint-plugin-sort-export-all eslint-plugin-eslint-comments \
   @typescript-eslint/eslint-plugin @typescript-eslint/parser \
   @angular-eslint/eslint-plugin @angular-eslint/eslint-plugin-template @angular-eslint/template-parser
@@ -73,7 +73,7 @@ npm install --save-dev @scitizen/eslint-config eslint \
 ```js
 module.exports = {
 	env: { /* See https://eslint.org/docs/user-guide/configuring#specifying-environments. es2020 is enabled by default */ },
-	extends: '@scitizen/eslint-config/ts',
+	extends: '@knodes/eslint-config/ts',
 	parserOptions: {
 		project: './tsconfig.json',
 	},
@@ -90,7 +90,7 @@ module.exports = {
 ```js
 module.exports = {
 	env: { /* See https://eslint.org/docs/user-guide/configuring#specifying-environments. es2020 is enabled by default */ },
-	extends: '@scitizen/eslint-config/js',
+	extends: '@knodes/eslint-config/js',
 };
 ```
 

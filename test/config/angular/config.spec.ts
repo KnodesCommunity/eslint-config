@@ -9,7 +9,7 @@ module.exports = {};
 ` );
 			const errors = await ctx.getErrors(
 				_dir => ( {
-					extends: '@scitizen/eslint-config/angular',
+					extends: '@knodes/eslint-config/angular',
 				} ),
 				testedFile );
 			expect( errors[0].messages ).toEqual( [] );

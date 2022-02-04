@@ -16,7 +16,7 @@ export function foo( this: string, bar: string | number ): string | number {
 					const tsconfig = ctx.addFile( './tsconfig.json', JSON.stringify( { files: [ testedFile ] } ) );
 					const errors = await ctx.getErrors(
 						dir => ( {
-							extends: '@scitizen/eslint-config/ts',
+							extends: '@knodes/eslint-config/ts',
 							parserOptions: { project: tsconfig, tsconfigRootDir: dir },
 						} ),
 						testedFile );
@@ -41,7 +41,7 @@ export function foo( this: string, bar: string | number ): string | number {
 					const tsconfig = ctx.addFile( './tsconfig.json', JSON.stringify( { files: [ testedFile ] } ) );
 					const errors = await ctx.getErrors(
 						dir => ( {
-							extends: '@scitizen/eslint-config/ts',
+							extends: '@knodes/eslint-config/ts',
 							parserOptions: { project: tsconfig, tsconfigRootDir: dir },
 						} ),
 						testedFile );
@@ -63,7 +63,7 @@ export class Qux {
 					const tsconfig = ctx.addFile( './tsconfig.json', JSON.stringify( { files: [ testedFile ] } ) );
 					const errors = await ctx.getErrors(
 						dir => ( {
-							extends: '@scitizen/eslint-config/ts',
+							extends: '@knodes/eslint-config/ts',
 							parserOptions: { project: tsconfig, tsconfigRootDir: dir },
 						} ),
 						testedFile );
@@ -90,7 +90,7 @@ export class Qux {
 					const tsconfig = ctx.addFile( './tsconfig.json', JSON.stringify( { files: [ testedFile ] } ) );
 					const errors = await ctx.getErrors(
 						dir => ( {
-							extends: '@scitizen/eslint-config/ts',
+							extends: '@knodes/eslint-config/ts',
 							parserOptions: { project: tsconfig, tsconfigRootDir: dir },
 						} ),
 						testedFile );
@@ -109,7 +109,7 @@ export const foo = 1;
 					const tsconfig = ctx.addFile( './tsconfig.json', JSON.stringify( { files: [ testedFile ] } ) );
 					const errors = await ctx.getErrors(
 						dir => ( {
-							extends: '@scitizen/eslint-config/ts',
+							extends: '@knodes/eslint-config/ts',
 							parserOptions: { project: tsconfig, tsconfigRootDir: dir },
 						} ),
 						testedFile );
@@ -129,7 +129,7 @@ export const foo = 1;
 					const tsconfig = ctx.addFile( './tsconfig.json', JSON.stringify( { files: [ testedFile ] } ) );
 					const errors = await ctx.getErrors(
 						dir => ( {
-							extends: '@scitizen/eslint-config/ts',
+							extends: '@knodes/eslint-config/ts',
 							parserOptions: { project: tsconfig, tsconfigRootDir: dir },
 						} ),
 						testedFile );
@@ -146,7 +146,7 @@ module.exports = {};
 				const errors = await ctx.getErrors(
 					() => ( {
 						env: { node: true },
-						extends: '@scitizen/eslint-config/ts',
+						extends: '@knodes/eslint-config/ts',
 					} ),
 					testedFile );
 				expect( errors[0].messages ).toEqual( [] );
@@ -172,7 +172,7 @@ export class Foo {
 						dir => ( {
 							env: { node: true },
 							parserOptions: { project: tsconfig, tsconfigRootDir: dir },
-							extends: '@scitizen/eslint-config/ts',
+							extends: '@knodes/eslint-config/ts',
 							rules: {
 								'jsdoc/require-jsdoc': 'off',
 							},
@@ -216,7 +216,7 @@ export class Foo {
 						dir => ( {
 							env: { node: true },
 							parserOptions: { project: tsconfig, tsconfigRootDir: dir },
-							extends: '@scitizen/eslint-config/ts',
+							extends: '@knodes/eslint-config/ts',
 							rules: {
 								'jsdoc/require-jsdoc': 'off',
 							},
@@ -251,7 +251,7 @@ export class Foo {
 						dir => ( {
 							env: { node: true },
 							parserOptions: { project: tsconfig, tsconfigRootDir: dir },
-							extends: '@scitizen/eslint-config/ts',
+							extends: '@knodes/eslint-config/ts',
 							rules: {
 								'jsdoc/require-jsdoc': 'off',
 							},
