@@ -40,6 +40,7 @@ export = {
 		'jsdoc/check-tag-names': [ 'error', {
 			definedTags: [ 'category', 'typeparam', ...jsdoc.rules['jsdoc/check-tag-names'][1].definedTags ],
 		} ],
+		'no-underscore-dangle': 'off',
 	},
 }
 /* eslint-enable max-len */

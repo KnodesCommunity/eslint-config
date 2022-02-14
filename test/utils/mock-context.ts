@@ -5,11 +5,11 @@ import { ensureDir, mkdirp, pathExists, readFile, rm, writeFile } from 'fs-extra
 import { globbySync } from 'globby';
 import { nanoid } from 'nanoid';
 
-const allSrc = globbySync( '**/*.ts', { cwd: resolve( __dirname, '../src' ) } );
+const allSrc = globbySync( '**/*.ts', { cwd: resolve( __dirname, '../../src' ) } );
 allSrc.forEach( src => {
 	jest.mock(
 		`@knodes/eslint-config/${src.replace( '.ts', '.js' )}`,
-		() => jest.requireActual( resolve( __dirname, '../src', src ) ),
+		() => jest.requireActual( resolve( __dirname, '../../src', src ) ),
 		{ virtual: true } );
 } );
 
