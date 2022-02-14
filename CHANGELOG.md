@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.6.2](https://github.com/KnodesCommunity/eslint-config/compare/v1.6.1...v1.6.2) (2022-02-14)
+
+
+### Bug Fixes
+
+* **ts:** disable `no-underscore-dangle` since _ is a required prefix for private members ([b4ed1ce](https://github.com/KnodesCommunity/eslint-config/commit/b4ed1cea02199950c8ced55bcbba35fd82e14c1f))
+
 ### [1.6.1](https://github.com/KnodesCommunity/eslint-config/compare/v1.6.0...v1.6.1) (2022-02-04)
 
 
