@@ -23,7 +23,7 @@
     "lint": "eslint --config .eslintrc.js '{,{src,test}/**/}*.{j,t}s'",
     "lint:commit-message:current": "commitlint -E HUSKY_GIT_PARAMS",
     "lint:fix": "npm run lint -- --fix",
-    "precommit": "npm run lint && npm run build && npm run test",
+    "precommit": "npm run build && npm run lint && npm run test",
     "prepare": "husky install && npm run build",
     "release": "standard-version",
     "test": "jest",
