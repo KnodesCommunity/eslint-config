@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "config:base",
+    "npm:unpublishSafe"
+  ],
+  "baseBranches": ["develop"],
+  "rangeStrategy": "auto",
+  "packageRules": [
+    {
+      "matchDepTypes": ["peerDependencies"],
+      "rangeStrategy": "replace"
+    },
+    {
+      "matchDepTypes": ["devDependencies"],
+      "rangeStrategy": "bump"
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    },
+    {
+      "matchDatasources": ["npm"],
+      "stabilityDays": 3
+    },
+  ]
+}
