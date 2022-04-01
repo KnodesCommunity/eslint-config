@@ -17,9 +17,9 @@ export = {
 			'error',
 			{
 				'pathGroups': [
-					{ pattern: '@{scitizen,knodes}/**', group: 'internal', position: 'before' },
-					{ pattern: '#{*,}{/**,}',           group: 'internal', position: 'before' },
-					{ pattern: '~{*,}{/**,}',           group: 'internal', position: 'before' },
+					{ pattern: '@knodes/**',  group: 'internal', position: 'before' },
+					{ pattern: '#{*,}{/**,}', group: 'internal', position: 'before' },
+					{ pattern: '~{*,}{/**,}', group: 'internal', position: 'before' },
 				],
 				'pathGroupsExcludedImportTypes': [ 'builtin' ],
 				'alphabetize': {
