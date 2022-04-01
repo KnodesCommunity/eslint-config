@@ -27,6 +27,8 @@
     "prepare": "husky install && npm run build",
     "release": "standard-version",
     "test": "jest",
+    "test:ci": "JEST_JUNIT_OUTPUT_NAME=junit.xml jest --config jest.config.ci.js --all --ci --reporters=default --reporters=jest-junit",
+    "test:ci:coverage": "npm run test:ci -- --collectCoverage",
     "test:watch": "npm run test -- --watch"
   },
   "commitlint": {
@@ -105,6 +107,7 @@
     "globby": "^13.1.1",
     "husky": "^7.0.4",
     "jest": "^27.5.1",
+    "jest-junit": "^13.0.0",
     "jest-node-exports-resolver": "^1.1.5",
     "nanoid": "^3.3.2",
     "standard-version": "^9.3.2",
