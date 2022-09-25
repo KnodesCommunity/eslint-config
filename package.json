@@ -84,7 +84,7 @@
     "@angular-eslint/eslint-plugin": "^13.2.1",
     "@angular-eslint/eslint-plugin-template": "^13.2.1",
     "@angular-eslint/template-parser": "^13.2.1",
-    "@babel/preset-env": "^7.18.0",
+    "@babel/preset-env": "^7.19.1",
     "@commitlint/cli": "^16.3.0",
     "@commitlint/config-conventional": "^16.2.4",
     "@types/eslint": "^8.4.2",
