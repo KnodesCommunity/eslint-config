@@ -87,7 +87,7 @@
     "@babel/preset-env": "^7.19.4",
     "@commitlint/cli": "^16.3.0",
     "@commitlint/config-conventional": "^16.2.4",
-    "@types/eslint": "^8.4.7",
+    "@types/eslint": "^8.4.8",
     "@types/fs-extra": "^9.0.13",
     "@types/jest": "^27.5.2",
     "@types/mock-fs": "^4.13.1",
