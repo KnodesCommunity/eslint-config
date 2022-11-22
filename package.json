@@ -107,7 +107,7 @@
     "globby": "^13.1.2",
     "husky": "^8.0.2",
     "jest": "^27.5.1",
-    "jest-junit": "^13.2.0",
+    "jest-junit": "^15.0.0",
     "jest-node-exports-resolver": "^1.1.6",
     "nanoid": "^3.3.4",
     "standard-version": "^9.3.2",
