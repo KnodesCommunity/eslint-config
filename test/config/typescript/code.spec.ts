@@ -22,6 +22,7 @@ export function foo( this: string, bar: string | number ): string | number {
  * Do some foo
  *
  * @param bar - The bar to handle.
+ * @returns something.
  */
 export function foo( bar: string ): string;
 export function foo( bar: number ): number;

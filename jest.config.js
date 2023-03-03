@@ -10,6 +10,5 @@ module.exports = {
 		['^.+\\.js$']: 'babel-jest',
 	},
 	transformIgnorePatterns: [ 'node_modules/(?!globby|array-union|slash)' ],
-	resolver: 'jest-node-exports-resolver',
 	modulePathIgnorePatterns: [ './.test' ],
 };
