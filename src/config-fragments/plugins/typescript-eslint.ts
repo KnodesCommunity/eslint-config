@@ -63,7 +63,6 @@ export = {
 					// Instance fields
 					'public-abstract-field',
 					'protected-abstract-field',
-					'private-abstract-field',
 					'abstract-field',
 
 					'public-decorated-field',
@@ -96,7 +95,6 @@ export = {
 					// Instance methods
 					'public-abstract-method',
 					'protected-abstract-method',
-					'private-abstract-method',
 					'abstract-method',
 
 					'public-decorated-method',
