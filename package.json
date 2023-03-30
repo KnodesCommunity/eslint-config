@@ -100,7 +100,7 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jsdoc": "^40.1.0",
     "eslint-plugin-prefer-arrow": "^1.2.3",
-    "eslint-plugin-rxjs": "^5.0.2",
+    "eslint-plugin-rxjs": "^5.0.3",
     "eslint-plugin-sort-export-all": "^1.2.2",
     "format-package": "^7.0.0",
     "fs-extra": "^11.1.1",
