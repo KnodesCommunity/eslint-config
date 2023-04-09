@@ -1,6 +1,6 @@
 {
   "name": "@knodes/eslint-config",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "description": "ESLint rules & presets for Knodes",
   "license": "MIT",
   "repository": {

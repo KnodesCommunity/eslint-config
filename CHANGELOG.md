@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.7.1](https://github.com/KnodesCommunity/eslint-config/compare/v1.7.0...v1.7.1) (2023-04-09)
+
 ## [1.7.0](https://github.com/KnodesCommunity/eslint-config/compare/v1.6.5...v1.7.0) (2023-03-03)
 
 ### [1.6.5](https://github.com/KnodesCommunity/eslint-config/compare/v1.6.4...v1.6.5) (2022-04-30)
