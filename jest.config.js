@@ -9,6 +9,6 @@ module.exports = {
 		...preset.transform,
 		['^.+\\.js$']: 'babel-jest',
 	},
+	testPathIgnorePatterns: [ '__tests__/utils/.*', '__tests__/.*/fixtures/.*' ],
 	transformIgnorePatterns: [ 'node_modules/(?!globby|array-union|slash)' ],
-	modulePathIgnorePatterns: [ './.test' ],
 };

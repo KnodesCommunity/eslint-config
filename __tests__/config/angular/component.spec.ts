@@ -12,9 +12,9 @@ export class FooComponent {}
 ` );
 				const tsconfig = ctx.addFile( './tsconfig.json', JSON.stringify( { files: [ testedFile ] } ) );
 				const errors = await ctx.getErrors(
-					dir => ( {
+					() => ( {
 						extends: '@knodes/eslint-config/angular',
-						parserOptions: { project: tsconfig, tsconfigRootDir: dir },
+						parserOptions: { project: tsconfig },
 					} ),
 					testedFile );
 				expect( errors[0].messages ).toEqual( [] );
@@ -24,9 +24,9 @@ export class FooComponent {}
 				const testedFile = ctx.addReal( './src/basic.component.ts' );
 				const tsconfig = ctx.addFile( './tsconfig.json', JSON.stringify( { files: [ testedFile ] } ) );
 				const errors = await ctx.getErrors(
-					dir => ( {
+					() => ( {
 						extends: '@knodes/eslint-config/angular',
-						parserOptions: { project: tsconfig, tsconfigRootDir: dir },
+						parserOptions: { project: tsconfig },
 					} ),
 					testedFile );
 				expect( errors[0].messages ).toEqual( [] );

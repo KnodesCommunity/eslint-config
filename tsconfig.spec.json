@@ -1,6 +1,6 @@
 {
 	"extends": "./tsconfig.json",
 	"compilerOptions": {},
-	"include": ["src", "test"],
-	"exclude": ["dist", "test/**/fixtures"]
+	"include": ["src", "__tests__"],
+	"exclude": ["dist", "__tests__/**/fixtures"]
 }

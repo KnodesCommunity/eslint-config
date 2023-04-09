@@ -8,9 +8,9 @@ export const getSingleTsFileResult = async( filename: string, fileContent: strin
 	const testedFile = ctx.addFile( filename, fileContent );
 	const tsconfig = ctx.addFile( './tsconfig.json', JSON.stringify( { ...configExtra?.tsconfig, files: [ testedFile ] } ) );
 	const results = await ctx.getErrors(
-		dir => ( {
+		() => ( {
 			...configExtra?.eslint,
-			parserOptions: { project: tsconfig, tsconfigRootDir: dir },
+			parserOptions: { project: tsconfig },
 			extends: '@knodes/eslint-config/ts',
 		} ),
 		testedFile );

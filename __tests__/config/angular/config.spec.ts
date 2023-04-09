@@ -8,7 +8,7 @@ describe( 'Angular', () => {
 module.exports = {};
 ` );
 			const errors = await ctx.getErrors(
-				_dir => ( {
+				() => ( {
 					extends: '@knodes/eslint-config/angular',
 				} ),
 				testedFile );
