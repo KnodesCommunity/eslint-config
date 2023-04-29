@@ -101,7 +101,7 @@
     "eslint-plugin-jsdoc": "^40.3.0",
     "eslint-plugin-prefer-arrow": "^1.2.3",
     "eslint-plugin-rxjs": "^5.0.3",
-    "eslint-plugin-sort-export-all": "^1.2.2",
+    "eslint-plugin-sort-export-all": "^1.4.1",
     "format-package": "^7.0.0",
     "globby": "^13.1.4",
     "husky": "^8.0.3",
