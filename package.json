@@ -67,9 +67,9 @@
     }
   },
   "peerDependencies": {
-    "@angular-eslint/eslint-plugin": "^15.0.0",
-    "@angular-eslint/eslint-plugin-template": "^15.0.0",
-    "@angular-eslint/template-parser": "^15.0.0",
+    "@angular-eslint/eslint-plugin": "^16.0.0",
+    "@angular-eslint/eslint-plugin-template": "^16.0.0",
+    "@angular-eslint/template-parser": "^16.0.0",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
     "eslint": "^8.0.0",
@@ -81,9 +81,9 @@
     "eslint-plugin-sort-export-all": "^1.0.0"
   },
   "devDependencies": {
-    "@angular-eslint/eslint-plugin": "^15.2.1",
-    "@angular-eslint/eslint-plugin-template": "^15.2.1",
-    "@angular-eslint/template-parser": "^15.2.1",
+    "@angular-eslint/eslint-plugin": "^16.0.3",
+    "@angular-eslint/eslint-plugin-template": "^16.0.3",
+    "@angular-eslint/template-parser": "^16.0.3",
     "@babel/preset-env": "^7.22.4",
     "@commitlint/cli": "^17.6.5",
     "@commitlint/config-conventional": "^17.6.5",
