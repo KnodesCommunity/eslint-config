@@ -91,7 +91,7 @@
     "@types/fs-extra": "^11.0.2",
     "@types/jest": "^29.5.5",
     "@types/mock-fs": "^4.13.1",
-    "@types/node": "^18.17.18",
+    "@types/node": "^18.17.19",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
     "babel-jest": "^29.7.0",
